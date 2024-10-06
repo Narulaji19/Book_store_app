@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import list from "../../public/list.json"
+
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -14,7 +16,7 @@ function Freebook() {
       try {
         const res = await axios.get("http://localhost:4001/book");
 
-        const data = res.data.filter((data) => data.category === "Free");
+        const data = res.data.filter((data) => data.category === "free");
         console.log(data);
         setBook(data);
       } catch (error) {
@@ -64,9 +66,7 @@ function Freebook() {
         <div>
           <h1 className="font-semibold text-xl pb-2">Free Offered Courses</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Accusantium veritatis alias pariatur ad dolor repudiandae eligendi
-            corporis nulla non suscipit, iure neque earum?
+           please login to see paid courses
           </p>
         </div>
 
