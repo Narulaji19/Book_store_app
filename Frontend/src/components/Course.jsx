@@ -25,7 +25,7 @@ function Course() {
             <span className="text-pink-500"> Here! :)</span>
           </h1>
           <p className=" bg-pink-400 text-lg text-white py-3     mt-12">
-            Enjoy all the books 
+            Enjoy all the books :)
           </p>
           <Link to="/">
             <button className="mt-6 bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-700 duration-300">
