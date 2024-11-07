@@ -10,7 +10,9 @@ import res from "express/lib/response.js";
 
 const app = express();
 
-app.use(cors());
+app.use(cors(
+    {}
+));
 app.use(express.json());
 
 dotenv.config();
